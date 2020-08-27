@@ -1,0 +1,22 @@
+.main {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.casesNTests {
+  margin: auto;
+  width: 800px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.caseImage {
+  width: 80px;
+}
+
+.individualCase {
+  display: flex;
+  flex-direction: column;
+}
