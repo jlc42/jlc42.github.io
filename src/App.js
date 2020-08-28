@@ -12,31 +12,118 @@ import './App.css';
 // Honestly, I have no idea what the best way is to arrange all that, nor have I kept up with HTML and the various scripting tools people use these days (thus my call for help). 
 
 function App() {
+  let states = ["AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY"];
+
   return (
     <div className="main">
     
-      <h1>JLC42</h1>
+      <h1>JLC42 - COVID19 Data</h1>
       <a href="https://jlcarroll.blogspot.com/" rel="noopener noreferrer" target="_blank">Link to blog</a>
       <h2>Cases and Tests</h2>
-      <div id="casesNTests" class="casesNTests">
-
+      <div id="casesNTests" className="casesNTests">
+        <CasesAndTestsByState statesList={states} />
+      </div>
+      <h2>Deaths</h2>
+      <div id="deaths" className="deaths">
+        <DeathsByState statesList={states} />
+      </div>
+      <h2>Percent Viral Tests Positive</h2>
+      <div id="percentViralTests" className="percentViralTests">
+        <PercentViralTestsByState statesList={states} />
+      </div>
+      <h2>RT Live Code Figs</h2>
+      <div id="rtLiveCodeFigs" className="rtLiveCodeFigs">
+        <RTLiveCodeFigs />
       </div>
     </div>
   );
 }
 
-// Component that holds the state case charts
-const CasesByState = () => {
-  let states = ["AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY"];
-  // for (let i = 0; i < states.length; i++) {
-  //   let caseLong = "./figs/casesNTests/" + states[i] + "-Daily Cases and Tests.png";
-  // }
-
+// Component that holds the state case and tests charts
+const CasesAndTestsByState = ({statesList}) => {
   return (
     <>
-      
+      {statesList.map((item) => (<CaseAndTest key = {`${item}CaseNTest`} location = {item} />))}
     </>
   )
 }
+
+// Component that returns an individual case and test data for that state
+const CaseAndTest = ({ location }) => {
+  let caseLong = `https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/${location}-DailyCasesAndTests.png`;
+  return (
+    <a href={caseLong} target="_blank" rel="noopener noreferrer">
+      <div className="case">
+        <img className="caseImage" src={caseLong} alt="" />
+        {location}
+      </div>
+    </a>
+  )
+}
+
+// Component that holds the state death charts
+const DeathsByState = ({ statesList }) => {
+  return (
+    <>
+      {statesList.map((item) => (<Death key = {`${item}Death`} location = {item} />))}
+    </>
+  )
+}
+
+// Component that returns an individual death chart for that state
+const Death = ({ location }) => {
+  let caseLong = `https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/dailyDeaths/${location}-DailyDeaths.png`;
+  return (
+    <a href={caseLong} target="_blank" rel="noopener noreferrer">
+      <div className="case">
+        <img className="caseImage" src={caseLong} alt="" />
+        {location}
+      </div>
+    </a>
+  )
+}
+
+// Component that holds the state percent viral tests positive charts
+const PercentViralTestsByState = ({ statesList }) => {
+  return (
+    <>
+      {statesList.map((item) => (<PercentViralTest key = {`${item}PercentViralTest`} location = {item} />))}
+    </>
+  )
+}
+
+// Component that returns an individual death chart for that state
+const PercentViralTest = ({ location }) => {
+  let caseLong = `https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/percentViralTestsPositive/${location}-PercentViralTestsPositive.png`;
+  return (
+    <a href={caseLong} target="_blank" rel="noopener noreferrer">
+      <div className="case">
+        <img className="caseImage" src={caseLong} alt="" />
+        {location}
+      </div>
+    </a>
+  )
+}
+
+// Component that returns the two rt_live_code_figs
+const RTLiveCodeFigs = () => {
+  return (
+    <>
+      <a href="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png" target="_blank" rel="noopener noreferrer">
+        <div className="case">
+          <img className="caseImage" src="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png" alt="" />
+          USA Cases
+        </div>
+      </a>
+      <a href="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png" target="_blank" rel="noopener noreferrer">
+        <div className="case">
+          <img className="caseImage" src="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png" alt="" />
+          USA RT
+        </div>
+      </a>
+    </>
+  )
+}
+
 
 export default App;

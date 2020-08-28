@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.casesNTests {
+.casesNTests, .deaths, .percentViralTests, .rtLiveCodeFigs {
   margin: auto;
   width: 800px;
   flex-wrap: wrap;
@@ -16,7 +16,8 @@
   width: 80px;
 }
 
-.individualCase {
+.case {
+  margin: 4px;
   display: flex;
   flex-direction: column;
 }
