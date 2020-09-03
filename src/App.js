@@ -29,7 +29,7 @@ const Figures = () => {
   // State hook that holds the modal boolean, whether or not it shows up
   const [modal, setModal] = React.useState(false);
   // State hook that holds the current US state being viewed
-  const [USState, setUSState] = React.useState('AK');
+  const [USState, setUSState] = React.useState('');
   // Fixes the problem of DC not being labeled properly
   window.addEventListener('load', () => {
     let DC = document.getElementsByClassName("DC").item(0);
@@ -39,14 +39,11 @@ const Figures = () => {
 
   return (
     <>
-      <h2>Select a category...</h2>
-      <input type="" />
-      <h3>OR</h3>
-      <h2>Select a state..</h2>
+      <h2>Select a state...</h2>
       <USAMap 
         onClick={(event) => {
           setModal(!modal); 
-          setUSState(event.target.dataset.name)
+          setUSState(event.target.dataset.name);
           }
         } 
       />
@@ -57,7 +54,6 @@ const Figures = () => {
           }
         } 
         location = {USState} 
-        type="Cases and Tests" 
         content="Content"
       />
       {/* <h2>Cases and Tests</h2>
@@ -199,11 +195,36 @@ const RTLiveCodeFigs = () => {
 // }
 
 // Modal component that handles the popup when clicking the image
-const Modal = ({ handleClose, show, location, type, content }) => {
+const Modal = ({ handleClose, show, location }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
+  // State hook that holds the current category being viewed
+  const [category, setCategory] = React.useState('');
+  // State hook that handles current image
+  const [image, setImage] = React.useState('');
+
+  // Define variables containing information used in modal window
   let currentUSState = Data.states[location];
-  let currentUSStateName = currentUSState.name;
+  let currentUSStateName, currentCategoryName, currentContent;
+  let categoriesArr = [];
+
+  for (let val in Data.categories) {
+    categoriesArr.push(val);
+  }
+
+  if (currentUSState) {
+    currentUSStateName = currentUSState.name;
+    currentCategoryName = Data.categories[category].name;
+    currentContent = currentUSState[category].text;
+  }
+
+  // useEffect hook that handles the change whenever state changes
+  React.useEffect(() => {
+    if (category === "") setCategory('caseAndTest');
+    if (currentUSState) {
+      setImage(currentUSState[category].image);
+    }
+  }, [category, currentUSState]);
 
   // If "ESC" is pressed, it exits the modal window
   const escFunction = (event) => {
@@ -236,11 +257,16 @@ const Modal = ({ handleClose, show, location, type, content }) => {
       <section className="modal-main">
         <span className="close" onClick={handleClose}>&times;</span>
         <div className="modal-header">  
-          <h1>{currentUSStateName} - {type}</h1>
+          <h1>{currentUSStateName} - {currentCategoryName}</h1>
+          {/* Insert buttons that allow you to change the category and view the related category's contents */}
+          {categoriesArr.map((item) => {
+            
+            return <button key={item} onClick={(() => setCategory(item))}>{Data.categories[item].name}</button>
+          })}
         </div>
-        {/* <img className="modal-image" src={image} alt={location} /> */}
+        <img className="modal-image" src={image} alt={location} />
         <div className="modal-content">
-        {content || "Lorem ipsum"}
+        {currentContent || "Lorem ipsum"}
         </div>
         <div className="modal-footer">
           <button onClick={handleClose}>close</button>
