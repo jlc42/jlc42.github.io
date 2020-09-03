@@ -18,7 +18,7 @@ import USAMap from 'react-usa-map';
 function App() {
   return (
     <div className="main">
-      <h1>JLC42 - COVID19 Data</h1>
+      <h1>JLC42 - COVID19 Watch</h1>
       <a href="https://covid-19watch.blogspot.com/" rel="noopener noreferrer" target="_blank">Link to blog</a>
       <Figures />
     </div>
@@ -65,74 +65,6 @@ const Figures = () => {
   )
 }
 
-// // Component that holds the state case and tests charts
-// const CasesAndTestsByState = ({statesList}) => {
-//   return (
-//     <>
-//       {statesList.map((item) => (<CaseAndTest key = {`${item}CaseNTest`} location = {item} />))}
-//     </>
-//   )
-// }
-
-// // Component that returns an individual case and test data for that state
-// const CaseAndTest = ({ location }) => {
-//   const [modal, setModal] = React.useState(false);
-//   let caseLong = `https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/${location}-DailyCasesAndTests.png`;
-//   return (
-//     <>
-//       <div className="case" onClick={() => {setModal(!modal)}}>
-//           <img className="caseImage" src={caseLong} alt="" />
-//           {location}
-//       </div>
-//       <Modal show={modal} handleClose={() => setModal(!modal)} image={caseLong} location={location} type="Cases and Tests" content="Content" />
-//     </>
-//   )
-// }
-
-// // Component that holds the state death charts
-// const DeathsByState = ({ statesList }) => {
-//   return (
-//     <>
-//       {statesList.map((item) => (<Death key = {`${item}Death`} location = {item} />))}
-//     </>
-//   )
-// }
-
-// // Component that returns an individual death chart for that state
-// const Death = ({ location }) => {
-//   let caseLong = `https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/dailyDeaths/${location}-DailyDeaths.png`;
-//   return (
-//     <a href={caseLong} target="_blank" rel="noopener noreferrer">
-//       <div className="case">
-//         <img className="caseImage" src={caseLong} alt="" />
-//         {location}
-//       </div>
-//     </a>
-//   )
-// }
-
-// // Component that holds the state percent viral tests positive charts
-// const PercentViralTestsByState = ({ statesList }) => {
-//   return (
-//     <>
-//       {statesList.map((item) => (<PercentViralTest key = {`${item}PercentViralTest`} location = {item} />))}
-//     </>
-//   )
-// }
-
-// // Component that returns an individual death chart for that state
-// const PercentViralTest = ({ location }) => {
-//   let caseLong = `https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/percentViralTestsPositive/${location}-PercentViralTestsPositive.png`;
-//   return (
-//     <a href={caseLong} target="_blank" rel="noopener noreferrer">
-//       <div className="case">
-//         <img className="caseImage" src={caseLong} alt="" />
-//         {location}
-//       </div>
-//     </a>
-//   )
-// }
-
 // Component that returns the two rt_live_code_figs
 const RTLiveCodeFigs = () => {
   // State hook that holds the modal boolean, whether or not it shows up
@@ -166,31 +98,6 @@ const RTLiveCodeFigs = () => {
     </>
   )
 }
-
-// // Component that handles the states list of estimated infections
-// const EstimatedInfectionsByState = ({ statesList }) => {
-//   return (
-//     <>
-//       {statesList.map((item) => (<EstimatedInfections key = {`${item}EstimatedInfections`} location = {item} />))}
-//     </>
-//   )
-// }
-
-// // Component that handles the estimated infections of one state
-// const EstimatedInfections = ({ location }) => {
-//   const [modal, setModal] = React.useState(false);
-
-//   let caseLong = `https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/${location}-EstimatedInfections.png`;
-//   return (
-//     <>
-//       <div className="case" onClick={() => {setModal(!modal)}}>
-//         <img className="caseImage" src={caseLong} alt="" />
-//         {location}
-//       </div>
-//       <Modal show={modal} handleClose={() => setModal(!modal)} image={caseLong} location={location} type="Estimated Infections" content="Content" />
-//     </>
-//   )
-// }
 
 // Modal component that handles the popup when clicking the image
 const Modal = ({ handleClose, show, location }) => {
@@ -287,7 +194,7 @@ const Modal = ({ handleClose, show, location }) => {
         {content || "Lorem ipsum"}
         </div>
         <div className="modal-footer">
-          <button onClick={handleClose}>close</button>
+          <button onClick={handleClose}>Close</button>
         </div>
       </section>
     </div>
@@ -332,7 +239,7 @@ const ModalForNation = ({ handleClose, show, type, url }) => {
         </div>
         <img className="modal-image" src={url} alt={type} />
         <div className="modal-footer">
-          <button onClick={handleClose}>close</button>
+          <button onClick={handleClose}>Close</button>
         </div>
       </section>
     </div>
