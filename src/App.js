@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import axios from 'axios';
 import Data from './App.json';
 import USAMap from 'react-usa-map';
 
@@ -56,23 +57,6 @@ const Figures = () => {
         location = {USState} 
         content="Content"
       />
-      {/* <h2>Cases and Tests</h2>
-      <div id="casesNTests" className="casesNTests">
-        <CasesAndTestsByState statesList={states} />
-      </div>
-      <h2>Deaths</h2>
-      <div id="deaths" className="deaths">
-        <DeathsByState statesList={states} />
-      </div>
-      <h2>Percent Viral Tests Positive</h2>
-      <div id="percentViralTests" className="percentViralTests">
-        <PercentViralTestsByState statesList={states} />
-      </div>
-      
-      <h2>Estimated Infections</h2>
-      <div id="estimatedInfections" className="estimatedInfections">
-       <EstimatedInfectionsByState statesList={states} />
-      </div> */}
       <h2>RT Live Code Figs</h2>
       <div id="rtLiveCodeFigs" className="rtLiveCodeFigs">
         <RTLiveCodeFigs />
@@ -151,20 +135,34 @@ const Figures = () => {
 
 // Component that returns the two rt_live_code_figs
 const RTLiveCodeFigs = () => {
+  // State hook that holds the modal boolean, whether or not it shows up
+  const [modal, setModal] = React.useState(false);
+  // State hook to hold which type of RT that is being passed
+  const [category, setCategory] = React.useState('');
+  // State hook to hold the URL of the image
+  const [image, setImage] = React.useState('');
+
   return (
     <>
-      <a href="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png" target="_blank" rel="noopener noreferrer">
-        <div className="case">
-          <img className="caseImage" src="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png" alt="" />
-          USA Cases
-        </div>
-      </a>
-      <a href="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png" target="_blank" rel="noopener noreferrer">
-        <div className="case">
-          <img className="caseImage" src="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png" alt="" />
-          USA RT
-        </div>
-      </a>
+      <div className="case" onClick={() => {setModal(!modal); setCategory('cases'); setImage('https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png');}}>
+        <img className="caseImage" src="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png" alt="" />
+        USA Cases
+      </div>
+      <div className="case" onClick={() => {setModal(!modal); setCategory('RT'); setImage('https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png');}}>
+        <img className="caseImage" src="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png" alt="" />
+        USA RT
+      </div>
+      <ModalForNation 
+        show={modal} 
+        handleClose={() => {
+          setModal(!modal);
+          setCategory('');
+          setImage('');
+          }
+        }
+        type={category}
+        url={image}
+      />
     </>
   )
 }
@@ -202,10 +200,14 @@ const Modal = ({ handleClose, show, location }) => {
   const [category, setCategory] = React.useState('');
   // State hook that handles current image
   const [image, setImage] = React.useState('');
+  // State hook that handles current text content
+  const [content, setContent] = React.useState('');
+  // State hook that handles current text content url
+  const [contentURL, setContentURL] = React.useState('');
 
   // Define variables containing information used in modal window
   let currentUSState = Data.states[location];
-  let currentUSStateName, currentCategoryName, currentContent;
+  let currentUSStateName, currentCategoryName;
   let categoriesArr = [];
 
   for (let val in Data.categories) {
@@ -215,16 +217,33 @@ const Modal = ({ handleClose, show, location }) => {
   if (currentUSState) {
     currentUSStateName = currentUSState.name;
     currentCategoryName = Data.categories[category].name;
-    currentContent = currentUSState[category].text;
   }
 
   // useEffect hook that handles the change whenever state changes
   React.useEffect(() => {
-    if (category === "") setCategory('caseAndTest');
+    if (category === "") setCategory('estimatedInfections');
     if (currentUSState) {
       setImage(currentUSState[category].image);
+      // Handles loading the content text into the modal window
+      const loadText = async () => {
+        setContentURL(currentUSState[category].text);
+        try {
+          let config = {
+            method: 'get',
+            url: contentURL
+          }
+          if (contentURL !== '') {
+            let contentText = await axios(config);
+            setContent(contentText.data);
+          }
+        } catch (err) {
+          console.log(err);
+          setContent('');
+        }
+      }
+      loadText();
     }
-  }, [category, currentUSState]);
+  }, [category, currentUSState, content, contentURL]);
 
   // If "ESC" is pressed, it exits the modal window
   const escFunction = (event) => {
@@ -260,14 +279,58 @@ const Modal = ({ handleClose, show, location }) => {
           <h1>{currentUSStateName} - {currentCategoryName}</h1>
           {/* Insert buttons that allow you to change the category and view the related category's contents */}
           {categoriesArr.map((item) => {
-            
             return <button key={item} onClick={(() => setCategory(item))}>{Data.categories[item].name}</button>
           })}
         </div>
         <img className="modal-image" src={image} alt={location} />
         <div className="modal-content">
-        {currentContent || "Lorem ipsum"}
+        {content || "Lorem ipsum"}
         </div>
+        <div className="modal-footer">
+          <button onClick={handleClose}>close</button>
+        </div>
+      </section>
+    </div>
+  )
+};
+
+const ModalForNation = ({ handleClose, show, type, url }) => {
+  const showHideClassName = show ? "modal display-block" : "modal display-none";
+
+  // If "ESC" is pressed, it exits the modal window
+  const escFunction = (event) => {
+    if (event.keyCode === 27) { 
+      handleClose();
+    }
+  }
+
+  // If the mouse is clicked outside of the modal window while it is open, the modal will close
+  const handleClick = (event) => {
+    if (event.target.className === "modal display-block") {
+      handleClose();
+    }
+  }
+
+  // Side-effect that handles the ESC press or click out of modal window
+  React.useEffect(() => {
+    if (show) {
+      window.addEventListener('keydown', escFunction);
+      window.addEventListener('click', handleClick)
+      return (() => {
+        window.removeEventListener('keydown', escFunction);
+        window.removeEventListener('click', handleClick);
+      })
+    }
+  })
+
+  return (
+    <div className={showHideClassName}>
+      <section className="modal-main">
+        <span className="close" onClick={handleClose}>&times;</span>
+        <div className="modal-header">  
+          <h1>USA {type}</h1>
+        </div>
+        <img className="modal-image" src={url} alt={type} />
         <div className="modal-footer">
           <button onClick={handleClose}>close</button>
         </div>
