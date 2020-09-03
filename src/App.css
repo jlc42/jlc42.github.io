@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.casesNTests, .deaths, .percentViralTests, .rtLiveCodeFigs {
+.casesNTests, .deaths, .percentViralTests, .rtLiveCodeFigs, .estimatedInfections {
   margin: auto;
   width: 800px;
   flex-wrap: wrap;
@@ -25,6 +25,17 @@
 
 .case:hover {
   background-color: rgba(220, 220, 220, 0.8);
+}
+
+/* path used in USAMap */
+path:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+g.DC:hover, g.DC path:hover, g.DC circle:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /* Modal info start */
