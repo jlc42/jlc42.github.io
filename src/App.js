@@ -191,7 +191,7 @@ const Modal = ({ handleClose, show, location }) => {
         </div>
         <img className="modal-image" src={image} alt={location} />
         <div className="modal-content">
-        {content || "Lorem ipsum"}
+        {content || "No explanation yet..."}
         </div>
         <div className="modal-footer">
           <button onClick={handleClose}>Close</button>
