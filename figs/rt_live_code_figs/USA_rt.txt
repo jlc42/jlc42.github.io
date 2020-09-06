@@ -1,0 +1,1 @@
+This figure is from the results of a run of the algorithm proposed by https://rt.live. While it adjusts for testing rates, we believe that it does so too aggressively. We are currently working on our own estimate for rt, and hope to be using that instead shortly. 
