@@ -1,8 +1,11 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import axios from 'axios';
 import Data from './App.json';
 import USAMap from 'react-usa-map';
+
+import darrenPic from './images/dkstoll.jpg';
+import jamesPic from './images/jlcarroll.jpg';
 
 // GOAL:
 // There are two different issues, a "what do we do quickly for now" and a "what will this look like longer term".
@@ -15,14 +18,42 @@ import USAMap from 'react-usa-map';
 
 // Honestly, I have no idea what the best way is to arrange all that, nor have I kept up with HTML and the various scripting tools people use these days (thus my call for help). 
 
-function App() {
+const App = () => {
   return (
-    <div className="main">
-      <h1>JLC42 - COVID19 Watch</h1>
-      <a href="https://covid-19watch.blogspot.com/" rel="noopener noreferrer" target="_blank">Link to blog</a>
+    <>
+      <Navbar />
+      <MainPage />
       <Figures />
-    </div>
+      <Credits />
+    </>
   );
+}
+
+// Component that contains info that the viewer will first see
+const MainPage = () => {
+  // Once we have a host with its own backend, we can use api keys to retrieve blog information
+
+  return (
+    <div id="main">
+      <h1>COVID-19 Watch</h1>
+      <a href="https://covid-19watch.blogspot.com/" rel="noopener noreferrer" target="_blank">Link to blog</a>
+    </div>
+  )
+}
+
+// Component that contains the navbar
+const Navbar = () => {
+  return (
+    <header>
+      <nav id="navbar">
+        <ul>
+          <a className="nav-link" href="#main"><li>Main</li></a>
+          <a className="nav-link" href="#figures"><li>Map & Figures</li></a>
+          <a className="nav-link" href="#credits"><li>Credits</li></a>
+        </ul>
+      </nav>
+    </header>
+  )
 }
 
 // Component that holds the figures
@@ -31,15 +62,24 @@ const Figures = () => {
   const [modal, setModal] = React.useState(false);
   // State hook that holds the current US state being viewed
   const [USState, setUSState] = React.useState('');
-  // Fixes the problem of DC not being labeled properly
+  // Adds features when loading the site
   window.addEventListener('load', () => {
+    // Creates DC as a "state" that wasn't there before
     let DC = document.getElementsByClassName("DC").item(0);
-    console.log(DC);
     DC.insertAdjacentHTML('beforeend', '<title>Washington DC</title>');
   })
 
+  // WAIT until I can get a better csv file to work with this.
+  // const statesCustomConfig = async () => {
+
+  // }
+
   return (
-    <>
+    <div id="figures">
+      <h2>US Average</h2>
+      <div id="rtLiveCodeFigs" className="rtLiveCodeFigs">
+        <RTLiveCodeFigs />
+      </div>
       <h2>Select a state...</h2>
       <USAMap 
         onClick={(event) => {
@@ -57,11 +97,8 @@ const Figures = () => {
         location = {USState} 
         content="Content"
       />
-      <h2>RT Live Code Figs</h2>
-      <div id="rtLiveCodeFigs" className="rtLiveCodeFigs">
-        <RTLiveCodeFigs />
-      </div> 
-    </>
+      
+    </div>
   )
 }
 
@@ -76,14 +113,12 @@ const RTLiveCodeFigs = () => {
 
   return (
     <>
-      <div className="case" onClick={() => {setModal(!modal); setCategory('cases'); setImage('https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png');}}>
-        <img className="caseImage" src="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png" alt="" />
+      <button className="chartButton" onClick={() => {setModal(!modal); setCategory('cases'); setImage('https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png');}}>
         USA Cases
-      </div>
-      <div className="case" onClick={() => {setModal(!modal); setCategory('RT'); setImage('https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png');}}>
-        <img className="caseImage" src="https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png" alt="" />
+      </button>
+      <button className="chartButton" onClick={() => {setModal(!modal); setCategory('RT'); setImage('https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png');}}>
         USA RT
-      </div>
+      </button>
       <ModalForNation 
         show={modal} 
         handleClose={() => {
@@ -246,5 +281,29 @@ const ModalForNation = ({ handleClose, show, type, url }) => {
   )
 };
 
+// Component that has information on all the people who contributed to this project
+const Credits = () => {
+  return (
+    <div id="credits">
+      <h2>Credits</h2>
+      <div className="creditContainer">
+        <div className="creditImageContainer"><img src={jamesPic} alt="James" /></div>
+        <div className="creditInfo">
+          <h3>James L Carroll</h3>
+          <h4>"The One in Charge"/Data Specialist</h4>
+          <p>James is the brains behind the operation who gathers the info and makes the charts. He is a radiographer and statistical modeler.</p>
+        </div>
+      </div>
+      <div className="creditContainer">
+      <div className="creditImageContainer"><img src={darrenPic} alt="Darren" /></div>
+        <div className="creditInfo">
+          <h3>Darren Stoll</h3>
+          <h4>Front-end Site Manager</h4>
+          <p>Darren is the one that makes the info show up on a nice, orderly website. He is a front-end software engineer.</p>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default App;

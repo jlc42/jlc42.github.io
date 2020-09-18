@@ -1,0 +1,259 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar start */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(#303030, #000000);
+  z-index: 1; 
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbar ul li {
+  padding: 10px 14px 10px 14px;
+  color: #ffffff;
+}
+
+#navbar ul a {
+  border-right: 1px solid #ffffff;
+}
+
+#navbar ul a:last-child {
+  border-right: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Courier, sans-serif;
+}
+
+.nav-link:hover {
+  background-color: rgb(70, 39, 1);
+  transition: 0.35s ease-in-out;
+}
+
+img {
+  width: 160px;
+}
+
+/* navbar end */
+
+$bgcolorOdd: #e0e0e0;
+$bgcolorEven: #303030;
+
+#main {
+  margin: auto;
+  padding-top: 42px;
+  width: 100vw;
+  height: calc(100vh - 42px);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $bgcolorOdd;
+}
+
+#main a {
+  text-decoration: none;
+  color: #404040;
+  border: 2px solid black;
+  padding: 2px 4px 4px 4px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px #404040;
+}
+
+#main a:hover {
+  background-color: rgb(255, 205, 144);
+  transition: 0.35s ease-in-out;
+}
+
+#figures {
+  margin: auto;
+  padding-top: 42px;
+  width: 100vw;
+  height: calc(100vh - 42px);
+  text-align: center;
+  background-color: $bgcolorEven;
+  color: white;
+}
+
+.chartButton {
+  background-color: rgb(70, 39, 1);
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin: 14px;
+  padding: 12px;
+  font-size: 16pt;
+  cursor: pointer;
+}
+
+.chartButton:hover {
+  background-color: rgb(129, 80, 21);
+  transition: 0.35s ease-in-out;
+}
+
+#credits {
+  margin: auto;
+  padding-top: 42px;
+  width: 100vw;
+  height: calc(100vh - 42px);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $bgcolorOdd;
+}
+
+.creditContainer {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  border: 2px solid #303030;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px #808080;
+  margin-top: 10px;
+  overflow: hidden;
+  height: 160px;
+}
+
+.creditContainer p, h3, h4 {
+  text-align: left;
+  padding-left: 16px;
+}
+
+.creditContainer .creditImageContainer {
+  height: 160px;
+  width: 160px;
+}
+
+.creditContainer img {
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  object-position: 50% top;
+}
+
+.caseImage {
+  width: 80px;
+}
+
+.case {
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.case:hover {
+  background-color: rgba(220, 220, 220, 0.8);
+}
+
+/* path used in USAMap */
+path:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+g.DC:hover, g.DC path:hover, g.DC circle:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Modal info start */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(192, 192, 192, 0.6);
+  text-align: center;
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  color: black;
+  width: 680px;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding: 10px;
+  border: 1px #353535;
+  border-radius: 10px;
+  text-align: left;
+  vertical-align: top;
+  
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-main a {
+  color: blue;
+  border: none;
+}
+
+.modal-image {
+  margin: auto;
+  width: 100%;
+}
+
+.modal-content {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  text-align: right;
+  border-top: 1px solid rgba(192, 192, 192, 0.6);
+  padding: 8px 0px 4px 0px;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.close {
+  color: #707070;;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal info end */

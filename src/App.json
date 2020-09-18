@@ -17,6 +17,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/AK-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/AK-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AK_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AK_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AK_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AK_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AK_rt.csv"
 			}
 		},
 		"AL": {
@@ -36,6 +45,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/AL-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/AL-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AL_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AL_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AL_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AL_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AL_rt.csv"
 			}
 		},
 		"AR": {
@@ -55,6 +73,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/AR-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/AR-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AR_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AR_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AR_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AR_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AR_rt.csv"
 			}
 		},
 		"AZ": {
@@ -74,6 +101,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/AZ-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/AZ-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AZ_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AZ_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AZ_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AZ_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/AZ_rt.csv"
 			}
 		},
 		"CA": {
@@ -93,6 +129,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/CA-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/CA-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CA_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CA_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CA_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CA_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CA_rt.csv"
 			}
 		},
 		"CO": {
@@ -112,6 +157,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/CO-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/CO-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CO_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CO_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CO_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CO_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CO_rt.csv"
 			}
 		},
 		"CT": {
@@ -131,6 +185,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/CT-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/CT-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CT_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CT_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CT_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CT_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/CT_rt.csv"
 			}
 		},
 		"DC": {
@@ -150,6 +213,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/DC-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/DC-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/DC_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/DC_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/DC_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/DC_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/DC_rt.csv"
 			}
 		},
 		"DE": {
@@ -169,6 +241,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/DE-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/DE-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/DE_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/DE_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/DE_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/DE_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/DE_rt.csv"
 			}
 		},
 		"FL": {
@@ -188,6 +269,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/FL-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/FL-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/FL_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/FL_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/FL_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/FL_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/FL_rt.csv"
 			}
 		},
 		"GA": {
@@ -207,6 +297,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/GA-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/GA-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/GA_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/GA_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/GA_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/GA_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/GA_rt.csv"
 			}
 		},
 		"HI": {
@@ -226,6 +325,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/HI-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/HI-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/HI_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/HI_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/HI_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/HI_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/HI_rt.csv"
 			}
 		},
 		"IA": {
@@ -245,6 +353,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/IA-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/IA-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IA_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IA_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IA_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IA_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IA_rt.csv"
 			}
 		},
 		"ID": {
@@ -264,6 +381,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/ID-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/ID-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ID_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ID_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ID_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ID_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ID_rt.csv"
 			}
 		},
 		"IL": {
@@ -283,6 +409,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/IL-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/IL-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IL_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IL_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IL_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IL_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IL_rt.csv"
 			}
 		},
 		"IN": {
@@ -302,6 +437,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/IN-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/IN-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IN_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IN_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IN_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IN_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/IN_rt.csv"
 			}
 		},
 		"KS": {
@@ -321,6 +465,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/KS-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/KS-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/KS_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/KS_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/KS_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/KS_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/KS_rt.csv"
 			}
 		},
 		"KY": {
@@ -340,6 +493,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/KY-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/KY-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/KY_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/KY_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/KY_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/KY_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/KY_rt.csv"
 			}
 		},
 		"LA": {
@@ -359,6 +521,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/LA-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/LA-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/LA_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/LA_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/LA_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/LA_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/LA_rt.csv"
 			}
 		},
 		"MA": {
@@ -378,6 +549,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MA-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MA-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MA_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MA_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MA_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MA_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MA_rt.csv"
 			}
 		},
 		"MD": {
@@ -397,6 +577,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MD-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MD-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MD_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MD_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MD_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MD_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MD_rt.csv"
 			}
 		},
 		"ME": {
@@ -416,6 +605,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/ME-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/ME-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ME_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ME_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ME_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ME_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ME_rt.csv"
 			}
 		},
 		"MI": {
@@ -435,6 +633,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MI-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MI-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MI_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MI_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MI_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MI_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MI_rt.csv"
 			}
 		},
 		"MN": {
@@ -454,6 +661,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MN-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MN-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MN_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MN_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MN_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MN_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MN_rt.csv"
 			}
 		},
 		"MO": {
@@ -473,6 +689,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MO-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MO-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MO_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MO_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MO_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MO_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MO_rt.csv"
 			}
 		},
 		"MS": {
@@ -492,6 +717,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MS-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MS-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MS_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MS_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MS_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MS_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MS_rt.csv"
 			}
 		},
 		"MT": {
@@ -511,6 +745,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MT-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/MT-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MT_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MT_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MT_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MT_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/MT_rt.csv"
 			}
 		},
 		"NC": {
@@ -530,6 +773,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NC-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NC-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NC_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NC_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NC_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NC_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NC_rt.csv"
 			}
 		},
 		"ND": {
@@ -549,6 +801,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/ND-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/ND-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ND_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ND_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ND_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ND_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/ND_rt.csv"
 			}
 		},
 		"NE": {
@@ -568,6 +829,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NE-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NE-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NE_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NE_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NE_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NE_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NE_rt.csv"
 			}
 		},
 		"NH": {
@@ -587,6 +857,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NH-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NH-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NH_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NH_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NH_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NH_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NH_rt.csv"
 			}
 		},
 		"NJ": {
@@ -606,6 +885,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NJ-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NJ-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NJ_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NJ_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NJ_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NJ_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NJ_rt.csv"
 			}
 		},
 		"NM": {
@@ -625,6 +913,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NM-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NM-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NM_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NM_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NM_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NM_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NM_rt.csv"
 			}
 		},
 		"NV": {
@@ -644,6 +941,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NV-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NV-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NV_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NV_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NV_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NV_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NV_rt.csv"
 			}
 		},
 		"NY": {
@@ -663,6 +969,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NY-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/NY-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NY_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NY_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NY_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NY_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/NY_rt.csv"
 			}
 		},
 		"OH": {
@@ -682,6 +997,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/OH-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/OH-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OH_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OH_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OH_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OH_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OH_rt.csv"
 			}
 		},
 		"OK": {
@@ -701,6 +1025,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/OK-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/OK-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OK_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OK_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OK_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OK_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OK_rt.csv"
 			}
 		},
 		"OR": {
@@ -720,6 +1053,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/OR-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/OR-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OR_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OR_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OR_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OR_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/OR_rt.csv"
 			}
 		},
 		"PA": {
@@ -739,6 +1081,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/PA-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/PA-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/PA_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/PA_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/PA_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/PA_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/PA_rt.csv"
 			}
 		},
 		"RI": {
@@ -758,6 +1109,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/RI-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/RI-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/RI_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/RI_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/RI_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/RI_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/RI_rt.csv"
 			}
 		},
 		"SC": {
@@ -777,6 +1137,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/SC-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/SC-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/SC_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/SC_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/SC_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/SC_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/SC_rt.csv"
 			}
 		},
 		"SD": {
@@ -796,6 +1165,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/SD-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/SD-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/SD_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/SD_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/SD_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/SD_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/SD_rt.csv"
 			}
 		},
 		"TN": {
@@ -815,6 +1193,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/TN-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/TN-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/TN_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/TN_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/TN_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/TN_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/TN_rt.csv"
 			}
 		},
 		"TX": {
@@ -834,6 +1221,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/TX-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/TX-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/TX_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/TX_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/TX_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/TX_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/TX_rt.csv"
 			}
 		},
 		"UT": {
@@ -853,6 +1249,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/UT-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/UT-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/UT_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/UT_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/UT_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/UT_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/UT_rt.csv"
 			}
 		},
 		"VA": {
@@ -872,6 +1277,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/VA-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/VA-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/VA_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/VA_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/VA_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/VA_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/VA_rt.csv"
 			}
 		},
 		"VT": {
@@ -891,6 +1305,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/VT-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/VT-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/VT_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/VT_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/VT_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/VT_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/VT_rt.csv"
 			}
 		},
 		"WA": {
@@ -910,6 +1333,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/WA-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/WA-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WA_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WA_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WA_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WA_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WA_rt.csv"
 			}
 		},
 		"WI": {
@@ -929,6 +1361,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/WI-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/WI-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WI_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WI_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WI_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WI_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WI_rt.csv"
 			}
 		},
 		"WV": {
@@ -948,6 +1389,15 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/WV-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/WV-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WV_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WV_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WV_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WV_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WV_rt.csv"
 			}
 		},
 		"WY": {
@@ -967,26 +1417,36 @@
 			"estimatedInfections": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/WY-EstimatedInfections.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/WY-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WY_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WY_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WY_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WY_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WY_rt.csv"
 			}
 		}
-  },
+	},
 	"categories": {
 		"caseAndTest": {
-			"name": "Cases and Tests",
-			"className": "casesNTests"
+			"name": "Cases and Tests"
 		},
 		"deaths": {
-			"name": "Deaths",
-			"className": "deaths"
+			"name": "Deaths"
 		},
 		"percentViralTest": {
-			"name": "Percent Viral Tests Positive",
-			"className": "percentViralTests"
+			"name": "Percent Viral Tests Positive"
 		},
 		"estimatedInfections": {
-			"name": "Estimated Infections",
-			"className": "estimatedInfections"
+			"name": "Estimated Infections"
+		},
+		"rtLiveCases": {
+			"name": "rt.Live Cases"
+		},
+		"rtLiveRT": {
+			"name": "rt.Live RT"
 		}
 	}
 }
-
