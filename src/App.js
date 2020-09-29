@@ -69,12 +69,20 @@ const Figures = () => {
   const [modal, setModal] = React.useState(false);
   // State hook that holds the current US state being viewed
   const [USState, setUSState] = React.useState('');
-  // // Adds features when loading the site
-  // window.addEventListener('load', () => {
-  //   // Creates DC as a "state" that wasn't there before
-  //   let DC = document.getElementsByClassName("DC").item(0);
-  //   DC.insertAdjacentHTML('beforeend', '<title>Washington DC</title>');
-  // })
+  // Adds features when loading the site
+  window.addEventListener('load', () => {
+    // Creates DC as a "state" that wasn't there before
+    let DC = document.getElementsByClassName("DC").item(0);
+    DC.insertAdjacentHTML('beforeend', '<title>Washington DC</title>');
+  })
+
+  let statesCustomConfig = () => {
+    return {
+      "NY": {
+        fill: "#cc0000"
+      }
+    }
+  }
 
   // WAIT until I can get a better csv file to work with this.
   // const statesCustomConfig = async () => {
@@ -86,16 +94,16 @@ const Figures = () => {
       <Navbar />
       <div id="figures">
         <h1>COVID-19 Watch</h1>
-        <h2>US Average</h2>
-        <div id="rtLiveCodeFigs" className="rtLiveCodeFigs">
-          <RTLiveCodeFigs />
+        <div id="USAFigs" className="USAFigs">
+          <USAFigs />
         </div>
         <h2>Select a state...</h2>
         
         {/* https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals */}
         <USAMap 
+          customize={statesCustomConfig()}
+
           onClick={(event) => {
-            console.log("clicked");
             setModal(!modal); 
             setUSState(event.target.dataset.name);
             }
@@ -181,7 +189,7 @@ const Figures = () => {
 // }
 
 // Component that returns the two rt_live_code_figs
-const RTLiveCodeFigs = () => {
+const USAFigs = () => {
   // State hook that holds the modal boolean, whether or not it shows up
   const [modal, setModal] = React.useState(false);
   // State hook to hold which type of RT that is being passed
@@ -191,13 +199,10 @@ const RTLiveCodeFigs = () => {
 
   return (
     <>
-      <button className="chartButton" onClick={() => {setModal(!modal); setCategory('cases'); setImage('https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png');}}>
-        USA Cases
+      <button className="chartButton" onClick={() => {setModal(!modal)}}>
+        Overall USA Statistics
       </button>
-      <button className="chartButton" onClick={() => {setModal(!modal); setCategory('RT'); setImage('https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png');}}>
-        USA RT
-      </button>
-      <ModalForNation 
+      <ModalForNation
         show={modal} 
         handleClose={() => {
           setModal(!modal);
@@ -205,6 +210,7 @@ const RTLiveCodeFigs = () => {
           setImage('');
           }
         }
+        location="USA"
         type={category}
         url={image}
       />
@@ -317,6 +323,25 @@ const Modal = ({ handleClose, show, location }) => {
 const ModalForNation = ({ handleClose, show, type, url }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
+  // State hook that holds the current category being viewed
+  const [category, setCategory] = React.useState('estimatedInfections');
+  // State hook that handles current image
+  const [image, setImage] = React.useState('');
+  // State hook that handles current text content
+  const [content, setContent] = React.useState('');
+  // State hook that handles current text content url
+  const [contentURL, setContentURL] = React.useState('');
+  
+  let USAData = Data.states["USA"];
+
+  let categoriesArr = [];
+
+  for (let val in Data.categories) {
+    categoriesArr.push(val);
+  }
+
+  let currentCategoryName = Data.categories[category].name;
+
   // If "ESC" is pressed, it exits the modal window
   const escFunction = (event) => {
     if (event.keyCode === 27) { 
@@ -343,14 +368,46 @@ const ModalForNation = ({ handleClose, show, type, url }) => {
     }
   })
 
+    // useEffect hook that handles the change whenever state changes
+    React.useEffect(() => {
+      if (USAData) {
+        setImage(USAData[category].image);
+        // Handles loading the content text into the modal window
+        const loadText = async () => {
+          setContentURL(USAData[category].text);
+          try {
+            let config = {
+              method: 'get',
+              url: contentURL
+            }
+            if (contentURL !== '') {
+              let contentText = await axios(config);
+              setContent(contentText.data);
+            }
+          } catch (err) {
+            console.log(err);
+            setContent('');
+          }
+        }
+        loadText();
+      }
+    }, [category, USAData, content, contentURL]);
+
   return (
     <div className={showHideClassName}>
       <section className="modal-main">
         <span className="close" onClick={handleClose}>&times;</span>
         <div className="modal-header">  
-          <h1>USA {type}</h1>
+          <h1>USA - {currentCategoryName}</h1>
+          {/* Insert buttons that allow you to change the category and view the related category's contents */}
+          {categoriesArr.map((item) => {
+            return <button key={item} onClick={(() => setCategory(item))}>{Data.categories[item].name}</button>
+          })}
         </div>
-        <img className="modal-image" src={url} alt={type} />
+        <img className="modal-image" src={image} alt="USA" />
+        <div className="modal-content">
+        {content || "No explanation yet..."}
+        </div>
         <div className="modal-footer">
           <button onClick={handleClose}>Close</button>
         </div>

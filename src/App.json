@@ -2,6 +2,14 @@
 	"states": {
 		"AK": {
 			"name": "Alaska",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/AK-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/AK-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/AK-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/AK-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/AK-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/AK-DailyCasesAndTests.txt"
@@ -30,6 +38,14 @@
 		},
 		"AL": {
 			"name": "Alabama",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/AL-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/AL-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/AL-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/AL-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/AL-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/AL-DailyCasesAndTests.txt"
@@ -58,6 +74,14 @@
 		},
 		"AR": {
 			"name": "Arkansas",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/AR-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/AR-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/AR-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/AR-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/AR-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/AR-DailyCasesAndTests.txt"
@@ -86,6 +110,14 @@
 		},
 		"AZ": {
 			"name": "Arizona",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/AZ-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/AZ-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/AZ-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/AZ-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/AZ-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/AZ-DailyCasesAndTests.txt"
@@ -114,6 +146,14 @@
 		},
 		"CA": {
 			"name": "California",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/CA-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/CA-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/CA-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/CA-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/CA-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/CA-DailyCasesAndTests.txt"
@@ -142,6 +182,14 @@
 		},
 		"CO": {
 			"name": "Colorado",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/CO-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/CO-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/CO-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/CO-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/CO-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/CO-DailyCasesAndTests.txt"
@@ -170,6 +218,14 @@
 		},
 		"CT": {
 			"name": "Connecticut",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/CT-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/CT-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/CT-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/CT-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/CT-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/CT-DailyCasesAndTests.txt"
@@ -198,6 +254,14 @@
 		},
 		"DC": {
 			"name": "Washington DC",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/DC-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/DC-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/DC-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/DC-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/DC-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/DC-DailyCasesAndTests.txt"
@@ -226,6 +290,14 @@
 		},
 		"DE": {
 			"name": "Delaware",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/DE-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/DE-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/DE-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/DE-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/DE-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/DE-DailyCasesAndTests.txt"
@@ -254,6 +326,14 @@
 		},
 		"FL": {
 			"name": "Florida",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/FL-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/FL-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/FL-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/FL-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/FL-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/FL-DailyCasesAndTests.txt"
@@ -282,6 +362,14 @@
 		},
 		"GA": {
 			"name": "Georgia",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/GA-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/GA-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/GA-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/GA-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/GA-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/GA-DailyCasesAndTests.txt"
@@ -310,6 +398,14 @@
 		},
 		"HI": {
 			"name": "Hawaii",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/HI-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/HI-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/HI-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/HI-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/HI-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/HI-DailyCasesAndTests.txt"
@@ -338,6 +434,14 @@
 		},
 		"IA": {
 			"name": "Iowa",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/IA-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/IA-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/IA-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/IA-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/IA-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/IA-DailyCasesAndTests.txt"
@@ -366,6 +470,14 @@
 		},
 		"ID": {
 			"name": "Idaho",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/ID-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/ID-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/ID-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/ID-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/ID-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/ID-DailyCasesAndTests.txt"
@@ -394,6 +506,14 @@
 		},
 		"IL": {
 			"name": "Illinois",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/IL-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/IL-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/IL-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/IL-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/IL-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/IL-DailyCasesAndTests.txt"
@@ -422,6 +542,14 @@
 		},
 		"IN": {
 			"name": "Indiana",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/IN-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/IN-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/IN-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/IN-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/IN-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/IN-DailyCasesAndTests.txt"
@@ -450,6 +578,14 @@
 		},
 		"KS": {
 			"name": "Kansas",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/KS-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/KS-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/KS-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/KS-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/KS-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/KS-DailyCasesAndTests.txt"
@@ -478,6 +614,14 @@
 		},
 		"KY": {
 			"name": "Kentucky",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/KY-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/KY-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/KY-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/KY-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/KY-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/KY-DailyCasesAndTests.txt"
@@ -506,6 +650,14 @@
 		},
 		"LA": {
 			"name": "Louisiana",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/LA-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/LA-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/LA-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/LA-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/LA-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/LA-DailyCasesAndTests.txt"
@@ -534,6 +686,14 @@
 		},
 		"MA": {
 			"name": "Massachusetts",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MA-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MA-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MA-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MA-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MA-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MA-DailyCasesAndTests.txt"
@@ -562,6 +722,14 @@
 		},
 		"MD": {
 			"name": "Maryland",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MD-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MD-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MD-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MD-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MD-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MD-DailyCasesAndTests.txt"
@@ -590,6 +758,14 @@
 		},
 		"ME": {
 			"name": "Maine",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/ME-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/ME-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/ME-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/ME-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/ME-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/ME-DailyCasesAndTests.txt"
@@ -618,6 +794,14 @@
 		},
 		"MI": {
 			"name": "Michigan",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MI-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MI-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MI-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MI-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MI-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MI-DailyCasesAndTests.txt"
@@ -646,6 +830,14 @@
 		},
 		"MN": {
 			"name": "Minnesota",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MN-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MN-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MN-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MN-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MN-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MN-DailyCasesAndTests.txt"
@@ -674,6 +866,14 @@
 		},
 		"MO": {
 			"name": "Missouri",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MO-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MO-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MO-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MO-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MO-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MO-DailyCasesAndTests.txt"
@@ -702,6 +902,14 @@
 		},
 		"MS": {
 			"name": "Mississippi",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MS-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MS-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MS-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MS-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MS-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MS-DailyCasesAndTests.txt"
@@ -730,6 +938,14 @@
 		},
 		"MT": {
 			"name": "Montana",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MT-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/MT-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MT-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/MT-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MT-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/MT-DailyCasesAndTests.txt"
@@ -758,6 +974,14 @@
 		},
 		"NC": {
 			"name": "North Carolina",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NC-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NC-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NC-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NC-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NC-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NC-DailyCasesAndTests.txt"
@@ -786,6 +1010,14 @@
 		},
 		"ND": {
 			"name": "North Dakota",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/ND-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/ND-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/ND-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/ND-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/ND-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/ND-DailyCasesAndTests.txt"
@@ -814,6 +1046,14 @@
 		},
 		"NE": {
 			"name": "Nebraska",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NE-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NE-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NE-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NE-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NE-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NE-DailyCasesAndTests.txt"
@@ -842,6 +1082,14 @@
 		},
 		"NH": {
 			"name": "New Hampshire",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NH-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NH-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NH-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NH-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NH-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NH-DailyCasesAndTests.txt"
@@ -870,6 +1118,14 @@
 		},
 		"NJ": {
 			"name": "New Jersey",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NJ-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NJ-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NJ-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NJ-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NJ-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NJ-DailyCasesAndTests.txt"
@@ -898,6 +1154,14 @@
 		},
 		"NM": {
 			"name": "New Mexico",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NM-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NM-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NM-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NM-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NM-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NM-DailyCasesAndTests.txt"
@@ -926,6 +1190,14 @@
 		},
 		"NV": {
 			"name": "Nevada",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NV-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NV-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NV-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NV-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NV-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NV-DailyCasesAndTests.txt"
@@ -954,6 +1226,14 @@
 		},
 		"NY": {
 			"name": "New York",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NY-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/NY-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NY-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/NY-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NY-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/NY-DailyCasesAndTests.txt"
@@ -982,6 +1262,14 @@
 		},
 		"OH": {
 			"name": "Ohio",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/OH-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/OH-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/OH-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/OH-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/OH-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/OH-DailyCasesAndTests.txt"
@@ -1010,6 +1298,14 @@
 		},
 		"OK": {
 			"name": "Oklahoma",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/OK-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/OK-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/OK-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/OK-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/OK-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/OK-DailyCasesAndTests.txt"
@@ -1038,6 +1334,14 @@
 		},
 		"OR": {
 			"name": "Oregon",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/OR-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/OR-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/OR-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/OR-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/OR-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/OR-DailyCasesAndTests.txt"
@@ -1066,6 +1370,14 @@
 		},
 		"PA": {
 			"name": "Pennsylvania",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/PA-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/PA-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/PA-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/PA-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/PA-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/PA-DailyCasesAndTests.txt"
@@ -1094,6 +1406,14 @@
 		},
 		"RI": {
 			"name": "Rhode Island",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/RI-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/RI-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/RI-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/RI-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/RI-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/RI-DailyCasesAndTests.txt"
@@ -1122,6 +1442,14 @@
 		},
 		"SC": {
 			"name": "South Carolina",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/SC-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/SC-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/SC-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/SC-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/SC-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/SC-DailyCasesAndTests.txt"
@@ -1150,6 +1478,14 @@
 		},
 		"SD": {
 			"name": "South Dakota",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/SD-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/SD-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/SD-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/SD-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/SD-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/SD-DailyCasesAndTests.txt"
@@ -1178,6 +1514,14 @@
 		},
 		"TN": {
 			"name": "Tennessee",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/TN-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/TN-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/TN-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/TN-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/TN-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/TN-DailyCasesAndTests.txt"
@@ -1206,6 +1550,14 @@
 		},
 		"TX": {
 			"name": "Texas",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/TX-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/TX-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/TX-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/TX-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/TX-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/TX-DailyCasesAndTests.txt"
@@ -1234,6 +1586,14 @@
 		},
 		"UT": {
 			"name": "Utah",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/UT-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/UT-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/UT-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/UT-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/UT-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/UT-DailyCasesAndTests.txt"
@@ -1262,6 +1622,14 @@
 		},
 		"VA": {
 			"name": "Virginia",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/VA-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/VA-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/VA-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/VA-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/VA-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/VA-DailyCasesAndTests.txt"
@@ -1290,6 +1658,14 @@
 		},
 		"VT": {
 			"name": "Vermont",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/VT-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/VT-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/VT-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/VT-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/VT-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/VT-DailyCasesAndTests.txt"
@@ -1318,6 +1694,14 @@
 		},
 		"WA": {
 			"name": "Washington",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/WA-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/WA-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/WA-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/WA-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/WA-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/WA-DailyCasesAndTests.txt"
@@ -1346,6 +1730,14 @@
 		},
 		"WI": {
 			"name": "Wisconsin",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/WI-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/WI-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/WI-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/WI-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/WI-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/WI-DailyCasesAndTests.txt"
@@ -1374,6 +1766,14 @@
 		},
 		"WV": {
 			"name": "West Virginia",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/WV-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/WV-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/WV-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/WV-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/WV-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/WV-DailyCasesAndTests.txt"
@@ -1402,6 +1802,14 @@
 		},
 		"WY": {
 			"name": "Wyoming",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/WY-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/WY-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/WY-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/WY-PercentInfected.txt"
+			},
 			"caseAndTest": {
 				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/WY-DailyCasesAndTests.png",
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/WY-DailyCasesAndTests.txt"
@@ -1427,9 +1835,51 @@
 				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WY_rt.txt",
 				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/WY_rt.csv"
 			}
+		},
+		"USA": {
+			"name": "United States of America",
+			"percentActive": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/USA-PercentActive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/USA-PercentActive.txt"
+			},
+			"percentInfected": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/USA-PercentInfected.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentInfected/USA-PercentInfected.txt"
+			},
+			"caseAndTest": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/USA-DailyCasesAndTests.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/casesNTests/USA-DailyCasesAndTests.txt"
+			},
+			"deaths": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/dailyDeaths/USA-DailyDeaths.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/dailyDeaths/USA-DailyDeaths.txt"
+			},
+			"percentViralTest": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/percentViralTestsPositive/USA-PercentViralTestsPositive.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/percentViralTestsPositive/USA-PercentViralTestsPositive.txt"
+			},
+			"estimatedInfections": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/USA-EstimatedInfections.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/estimatedInfections/USA-EstimatedInfections.txt"
+			},
+			"rtLiveCases": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_cases.txt"
+			},
+			"rtLiveRT": {
+				"image": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.png",
+				"text": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.txt",
+				"csv": "https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/USA_rt.csv"
+			}
 		}
 	},
 	"categories": {
+		"percentActive": {
+			"name": "Percent Active"
+		},
+		"percentInfected": {
+			"name": "Percent Infected"
+		},
 		"caseAndTest": {
 			"name": "Cases and Tests"
 		},

@@ -16,8 +16,8 @@ html {
 #navbar ul {
   list-style-type: none;
   padding: 0;
-  padding-right: 14px;
   margin: 0;
+
   display: flex;
   justify-content: flex-end;
 }
@@ -179,7 +179,7 @@ $bgcolorEven: #303030;
 
 /* path used in USAMap */
 path {
-  fill: #505050;
+  // fill: #505050;
 }
 
 path:hover {
