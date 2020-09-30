@@ -177,17 +177,18 @@ $bgcolorEven: #303030;
   background-color: rgba(220, 220, 220, 0.8);
 }
 
-/* path used in USAMap */
-path {
-  fill: #505050;
+div.tooltip {
+  position: absolute;
+	text-align: center;
+  padding: 8px;
+	background: white;
+  border: 2px solid #707070;
+  box-shadow: 1px 1px 2px #a0a0a0;
+	border-radius: 3px;
+  pointer-events: none;
 }
 
-path:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-g.DC:hover, g.DC path:hover, g.DC circle:hover {
+path:hover, circle:hover {
   opacity: 0.5;
   cursor: pointer;
 }
