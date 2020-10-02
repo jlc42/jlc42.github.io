@@ -83,13 +83,13 @@ const Figures = () => {
         <h2>Select a state...</h2>
         
         {/* https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals */}
-        <USAMap modal={modal} setModal={setModal} setUSState={setUSState} />
+        <USAMap modal={modal} setModal={setModal} USState={USState} setUSState={setUSState} />
         <Modal 
           show={modal} 
           handleClose={() => {
             setModal(!modal);
             }
-          } 
+          }
           location = {USState} 
           content="Content"
         />
@@ -129,7 +129,7 @@ const USAFigs = () => {
   )
 }
 
-const USAMap = ({ modal, setModal, setUSState }) => {
+const USAMap = ({ modal, setModal, USState, setUSState }) => {
   //Width and height of map
   var width = 960;
   var height = 500;
@@ -181,38 +181,6 @@ const USAMap = ({ modal, setModal, setUSState }) => {
   poorIndicator = "#cc0000";
   okayIndicator = "#cccc00";
   goodIndicator = "#00cc00";
-  // React.useEffect(() => {
-  //   const buildColors = async () => {
-  //     try {
-  //       let config = {
-  //         method: 'get',
-  //         url: 'https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/rt_live_code_figs/masterRt.csv'
-  //       }
-  //       let rtData = csvJSON((await axios(config)).data);
-  //       for (let i = 0; i < rtData.length; i++) {
-  //         let currentState = Object.keys(rtData[i])[0];
-  
-  //         let currentRt = rtData[i][currentState].Mean;
-  //         let rtColor;
-  //         if (currentRt > 1.02) rtColor = poorIndicator;
-  //         else if (currentRt < 0.98) rtColor = goodIndicator;
-  //         else rtColor = okayIndicator;
-  
-  //         setStatesStatus([
-  //           ...statesStatus,
-  //           {
-  //             state: currentState,
-  //             fill: rtColor 
-  //           }
-  //         ])
-  //       }
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   }
-  //   buildColors();
-  //   console.log(statesStatus);
-  // }, [])
 
   var tooltip;
 
@@ -265,7 +233,7 @@ const USAMap = ({ modal, setModal, setUSState }) => {
       .enter()
       .append("path")
       .attr("d", path)
-      .attr("data-stateAbbr", (d) => d.properties.abbr)
+      .attr("data-stateabbr", (d) => d.properties.abbr)
       .attr("data-state", (d) => d.properties.name)
       .attr("data-rt", d => d.properties.rt)
       .style("stroke", "#fff")
@@ -284,7 +252,7 @@ const USAMap = ({ modal, setModal, setUSState }) => {
       })
       .on("click", (d) => {
         setModal(!modal);
-        setUSState(d.target.dataset.stateAbbr);
+        setUSState(d.target.dataset.stateabbr);
       });
     
     // Insert DC
@@ -292,7 +260,7 @@ const USAMap = ({ modal, setModal, setUSState }) => {
       .data([usStatesAll.find(e => e.id === "11")])
       .enter()
       .append("circle")
-      .attr("data-stateAbbr", (d) => d.properties.abbr)
+      .attr("data-stateabbr", (d) => d.properties.abbr)
       .attr("data-state", (d) => d.properties.name)
       .attr("data-rt", d => d.properties.rt)
       .attr("cx", 740)
@@ -309,7 +277,7 @@ const USAMap = ({ modal, setModal, setUSState }) => {
           .style("opacity", 0.9)
       })
       .on("mouseout", (d) => {
-        tooltip.text(d.target.dataset.state)
+        tooltip
           .style("opacity", 0)
       })
       .on("click", (d) => {
