@@ -119,6 +119,31 @@ $bgcolorEven: #303030;
   transition: 0.35s ease-in-out;
 }
 
+#news {
+  margin: auto;
+  padding-top: 42px;
+  width: 100vw;
+  height: calc(100vh - 42px);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: $bgcolorOdd;
+}
+
+.newsItemContainer {
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 #credits {
   margin: auto;
   padding-top: 42px;

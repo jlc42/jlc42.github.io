@@ -28,6 +28,7 @@ const App = () => {
     <Switch>
       <ScrollToTop>
         <Route exact path="/" component={Figures} />
+        <Route path="/news" component={News} />
         <Route path="/about" component={AboutPage} />
         <Route path="/credits" component={Credits} />
       </ScrollToTop>
@@ -57,6 +58,7 @@ const Navbar = () => {
       <nav id="navbar">
         <ul>
           <Link className="nav-link" to="/"><li>Map & Figures</li></Link>
+          <Link className="nav-link" to="/news"><li>News</li></Link>
           <Link className="nav-link" to="/about"><li>About</li></Link>
           <Link className="nav-link" to="/credits"><li>Credits</li></Link>
         </ul>
@@ -129,6 +131,12 @@ const USAFigs = () => {
   )
 }
 
+// Tooltip declared outside of component to avoid duplication
+var tooltip = d3.select("body")
+  .append("div")
+  .attr("class", "tooltip")               
+  .style("opacity", 0);
+
 const USAMap = ({ modal, setModal, USState, setUSState }) => {
   //Width and height of map
   var width = 960;
@@ -180,17 +188,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
   let poorIndicator, okayIndicator, goodIndicator;
   poorIndicator = "#cc0000";
   okayIndicator = "#cccc00";
-  goodIndicator = "#00cc00";
-
-  var tooltip;
-
-  if (d3.select("div.tooltip").empty()) {
-    tooltip = d3.select("body")
-      .append("div")
-      .attr("class", "tooltip")               
-      .style("opacity", 0);
-  }
-  
+  goodIndicator = "#00cc00";  
   
   // Build the map using d3 and the fill colors from the rt data
   React.useEffect(() => {
@@ -282,7 +280,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       })
       .on("click", (d) => {
         setModal(!modal);
-        setUSState(d.target.dataset.stateAbbr);
+        setUSState(d.target.dataset.stateabbr);
       });
     }
     createMapWithColors();
@@ -324,7 +322,7 @@ const Modal = ({ handleClose, show, location }) => {
 
   // useEffect hook that handles the change whenever state changes
   React.useEffect(() => {
-    if (category === "") setCategory('estimatedInfections');
+    if (category === "") setCategory('percentInfected');
     if (currentUSState) {
       setImage(currentUSState[category].image);
       // Handles loading the content text into the modal window
@@ -401,7 +399,7 @@ const ModalForNation = ({ handleClose, show, type, url }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
   // State hook that holds the current category being viewed
-  const [category, setCategory] = React.useState('estimatedInfections');
+  const [category, setCategory] = React.useState('percentInfected');
   // State hook that handles current image
   const [image, setImage] = React.useState('');
   // State hook that handles current text content
@@ -492,6 +490,47 @@ const ModalForNation = ({ handleClose, show, type, url }) => {
     </div>
   )
 };
+
+const News = () => {
+  const [newsfeed, setNewsfeed] = React.useState([]);
+  React.useEffect(() => {
+    const retrieveBlog = async () => {
+      try {
+        let config = {
+          method: 'get',
+          url: "https://api.rss2json.com/v1/api.json?rss_url=https://covid-19watch.blogspot.com/feeds/posts/default?alt=rss"
+        }
+        let res = await axios(config);
+        setNewsfeed([
+          res.data.items[0],
+          res.data.items[1],
+          res.data.items[2]
+        ])
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    retrieveBlog();
+  },[])
+
+  return (
+    <>
+      <Navbar />
+      <div id="news">
+        <h1>News</h1>
+        {newsfeed.map(item => {
+          console.log(item);
+          return(
+            <div className="newsItemContainer">
+              <h2 style={{margin:"0px"}}>{item.title}</h2>
+              <h5>{item.pubDate}</h5>
+            </div>
+          )
+        })}
+      </div>
+    </>
+  )
+}
 
 // Component that has information on all the people who contributed to this project
 const Credits = () => {
