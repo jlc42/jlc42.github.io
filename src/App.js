@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.scss';
 import { Route, Switch, Link } from 'react-router-dom';
+import sanitizeHtml from 'sanitize-html';
+import { DateTime } from 'luxon';
 import axios from 'axios';
 import Data from './App.json';
 import * as d3 from 'd3';
@@ -133,9 +135,9 @@ const USAFigs = () => {
 
 // Tooltip declared outside of component to avoid duplication
 var tooltip = d3.select("body")
-  .append("div")
-  .attr("class", "tooltip")               
-  .style("opacity", 0);
+ .append("div")
+ .attr("class", "tooltip")               
+ .style("visibility", "hidden");
 
 const USAMap = ({ modal, setModal, USState, setUSState }) => {
   //Width and height of map
@@ -153,7 +155,6 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
 
 
   const svgRef = React.useRef();
-
   
   // Function to convert csv to JSON, specific for this project - http://techslides.com/convert-csv-to-json-in-javascript
   const csvJSON = (csv) => {
@@ -185,10 +186,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
 
   // Get the current colors for each state to use for fill
   
-  let poorIndicator, okayIndicator, goodIndicator;
-  poorIndicator = "#cc0000";
-  okayIndicator = "#cccc00";
-  goodIndicator = "#00cc00";  
+  let statusIndicator = ["#cc0000","#cccc00","#00cc00", "#66ff00", "#ffa500"];
   
   // Build the map using d3 and the fill colors from the rt data
   React.useEffect(() => {
@@ -210,9 +208,11 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
           
           let currentRt = rtData[i][currentState].Mean;
           let rtColor;
-          if (currentRt > 1.02) rtColor = poorIndicator;
-          else if (currentRt < 0.98) rtColor = goodIndicator;
-          else rtColor = okayIndicator;
+          if (currentRt > 1.1) rtColor = statusIndicator[0];
+          else if (currentRt > 1.02) rtColor = statusIndicator[4];
+          else if (currentRt < 0.95) rtColor = statusIndicator[3];
+          else if (currentRt < 0.98) rtColor = statusIndicator[2];
+          else rtColor = statusIndicator[1];
 
           let existingUSStateInJSON = usStatesAll.find(e => e.properties.abbr === currentState);
 
@@ -242,11 +242,11 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
         tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4) + "</p>")
           .style("left", (d.x + 18) + "px")
           .style("top", (d.y - 28) + "px")
-          .style("opacity", 0.9)
+          .style("visibility", "visible")
       })
       .on("mouseout", (d) => {
         tooltip
-          .style("opacity", 0)
+          .style("visibility", "hidden")
       })
       .on("click", (d) => {
         setModal(!modal);
@@ -517,13 +517,19 @@ const News = () => {
     <>
       <Navbar />
       <div id="news">
-        <h1>News</h1>
         {newsfeed.map(item => {
-          console.log(item);
+          let dt = DateTime.fromSQL(item.pubDate);
+          
+          let sanitizedContent = sanitizeHtml(item.content, 
+            {
+              allowedTags: ['p','img','span','br','div','a','h2']
+            });
+          
           return(
-            <div className="newsItemContainer">
-              <h2 style={{margin:"0px"}}>{item.title}</h2>
-              <h5>{item.pubDate}</h5>
+            <div key={item.link} className="newsItemContainer">
+              <a href={item.link} target="_blank" rel="noopener noreferrer"><h1>{item.title}</h1></a>
+              <h5>{dt.toLocaleString(DateTime.DATETIME_FULL)}</h5>
+              <div dangerouslySetInnerHTML={{__html: sanitizedContent}}></div>
             </div>
           )
         })}
@@ -541,11 +547,11 @@ const Credits = () => {
       <div id="credits">
         <h2>Credits</h2>
         <div className="creditContainer">
-          <div className="creditImageContainer"><img src={jamesPic} alt="James" /></div>
+          <div className="creditImageContainer"><img src={jamesPic} alt="James" style={{objectPosition:"50% 35%"}} /></div>
           <div className="creditInfo">
             <h3>James L Carroll</h3>
             <h4>"The One in Charge"/Data Specialist</h4>
-            <p>James is the brains behind the operation who gathers the info and makes the charts. He is a radiographer and statistical modeler.</p>
+            <p>James Carroll has a PhD in statistical machine learning, with a minor in Ancient Near Eastern history from Brigham Young University, and is currently a scientist at Los Alamos National Laboratory working in complex data analysis and uncertainty quantification.</p>
           </div>
         </div>
         <div className="creditContainer">

@@ -46,10 +46,6 @@ html {
   transition: 0.35s ease-in-out;
 }
 
-img {
-  width: 160px;
-}
-
 /* navbar end */
 
 $bgcolorOdd: #e0e0e0;
@@ -58,8 +54,7 @@ $bgcolorEven: #303030;
 #about {
   margin: auto;
   padding-top: 42px;
-  width: 100vw;
-  height: calc(100vh - 42px);
+  height: calc(100vh - 58px);
   text-align: center;
   display: flex;
   align-items: center;
@@ -92,7 +87,6 @@ $bgcolorEven: #303030;
 #figures {
   margin: auto;
   padding-top: 42px;
-  width: 100vw;
   height: calc(100vh - 42px);
   text-align: center;
   background-color: $bgcolorOdd;
@@ -121,22 +115,22 @@ $bgcolorEven: #303030;
 
 #news {
   margin: auto;
-  padding-top: 42px;
-  width: 100vw;
-  height: calc(100vh - 42px);
+  margin-top: 38px;
+  height: calc(100vh - 38px);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   background-color: $bgcolorOdd;
+  overflow-y: scroll;
 }
 
 .newsItemContainer {
   background-color: white;
   border-radius: 15px;
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
+  padding: 10px 20px;
   width: 80%;
   text-align: left;
   display: flex;
@@ -144,10 +138,22 @@ $bgcolorEven: #303030;
   flex-direction: column;
 }
 
+.newsItemContainer a {
+  text-decoration: none;
+  color: blue;
+}
+
+.newsItemContainer a h1 {
+  color: #202020;
+}
+
+.newsItemContainer h1, h5 {
+  margin-bottom: 0;
+}
+
 #credits {
   margin: auto;
   padding-top: 42px;
-  width: 100vw;
   height: calc(100vh - 42px);
   text-align: center;
   display: flex;
@@ -204,6 +210,8 @@ $bgcolorEven: #303030;
 
 div.tooltip {
   position: absolute;
+  top: 0;
+  left: 0;
 	text-align: center;
   padding: 8px;
 	background: white;
@@ -211,6 +219,7 @@ div.tooltip {
   box-shadow: 1px 1px 2px #a0a0a0;
 	border-radius: 3px;
   pointer-events: none;
+  visibility: hidden;
 }
 
 path:hover, circle:hover {
