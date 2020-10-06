@@ -140,6 +140,7 @@ var tooltip = d3.select("body")
  .style("visibility", "hidden");
 
 const USAMap = ({ modal, setModal, USState, setUSState }) => {
+  const [activeMap, setActiveMap] = React.useState(false);
   //Width and height of map
   var width = 960;
   var height = 500;
@@ -185,18 +186,23 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
   }
 
   // Get the current colors for each state to use for fill
-  
-  let statusIndicator = ["#cc0000","#cccc00","#00cc00", "#66ff00", "#ffa500"];
+  // Colors: Red, Orange, Yellow,  Green, Bright-Green
+  let statusIndicator = ["#cc0000", "#ffa500", "#cccc00", "#00cc00", "#66ff00"];
   
   // Build the map using d3 and the fill colors from the rt data
   React.useEffect(() => {
+    // Boolean that holds current map color that is active
+
     const svg = d3.select(svgRef.current)
       .attr("width", width)
       .attr("height", height);
 
+    console.log("try");
+
     const createMapWithColors = async () => {
       let usStatesAll = usStates.features;
 
+      // Map color and properties for rt
       try {
         let config = {
           method: 'get',
@@ -209,17 +215,45 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
           let currentRt = rtData[i][currentState].Mean;
           let rtColor;
           if (currentRt > 1.1) rtColor = statusIndicator[0];
-          else if (currentRt > 1.02) rtColor = statusIndicator[4];
-          else if (currentRt < 0.95) rtColor = statusIndicator[3];
-          else if (currentRt < 0.98) rtColor = statusIndicator[2];
-          else rtColor = statusIndicator[1];
+          else if (currentRt > 1.02) rtColor = statusIndicator[1];
+          else if (currentRt < 0.95) rtColor = statusIndicator[4];
+          else if (currentRt < 0.98) rtColor = statusIndicator[3];
+          else rtColor = statusIndicator[2];
 
           let existingUSStateInJSON = usStatesAll.find(e => e.properties.abbr === currentState);
 
           if (existingUSStateInJSON) {
-            Object.assign(usStatesAll[usStatesAll.findIndex(x => x.id === existingUSStateInJSON.id)].properties, {fill: rtColor}, {rt: currentRt});
+            Object.assign(usStatesAll[usStatesAll.findIndex(x => x.id === existingUSStateInJSON.id)].properties, {rtfill: rtColor}, {rt: currentRt});
           }
-  
+        }
+      } catch (err) {
+        console.log(err);
+      }
+
+      // Map color and properties for percent infected
+      try {
+        let config = {
+          method: 'get',
+          url: 'https://raw.githubusercontent.com/jlc42/jlc42.github.io/master/figs/PercentActive/masterPercentInfected.csv'
+        }
+        let infectedData = csvJSON((await axios(config)).data);
+        for (let i = 0; i < infectedData.length; i++) {
+          let currentState = Object.keys(infectedData[i])[0].slice(0,2);
+          
+          let currentInfected = infectedData[i][Object.keys(infectedData[i])[0]].Mean;
+
+          let infectedColor;
+          if (currentInfected > 1.0) infectedColor = statusIndicator[0];
+          else if (currentInfected > 0.75) infectedColor = statusIndicator[1];
+          else if (currentInfected > 0.50) infectedColor = statusIndicator[2];
+          else if (currentInfected > 0.25) infectedColor = statusIndicator[3];
+          else infectedColor = statusIndicator[4];
+
+          let existingUSStateInJSON = usStatesAll.find(e => e.properties.abbr === currentState);
+
+          if (existingUSStateInJSON) {
+            Object.assign(usStatesAll[usStatesAll.findIndex(x => x.id === existingUSStateInJSON.id)].properties, {infectedfill: infectedColor}, {infected: (currentInfected * 100)});
+          }
         }
       } catch (err) {
         console.log(err);
@@ -230,16 +264,18 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .data(usStatesAll)
       .enter()
       .append("path")
+      .attr("id", d => "state" + d.properties.abbr)
       .attr("d", path)
       .attr("data-stateabbr", (d) => d.properties.abbr)
       .attr("data-state", (d) => d.properties.name)
       .attr("data-rt", d => d.properties.rt)
+      .attr("data-infected", d=> d.properties.infected)
       .style("stroke", "#fff")
       .style("stroke-width", "1")
-      .style("fill", (d) => d.properties.fill)
+      .style("fill", (d) => d.properties.rtfill)
 
       .on("mousemove", (d) => {
-        tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4) + "</p>")
+        tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4)+ "<br />% infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "%</p>")
           .style("left", (d.x + 18) + "px")
           .style("top", (d.y - 28) + "px")
           .style("visibility", "visible")
@@ -252,36 +288,71 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
         setModal(!modal);
         setUSState(d.target.dataset.stateabbr);
       });
+
     
-    // Insert DC
-    svg.selectAll("svg")
+    // Insert DC as a circle
+    if (d3.selectAll("#stateDC").size() === 1) {
+      svg.selectAll("svg")
       .data([usStatesAll.find(e => e.id === "11")])
       .enter()
       .append("circle")
+      .attr("id", d => "state" + d.properties.abbr)
       .attr("data-stateabbr", (d) => d.properties.abbr)
       .attr("data-state", (d) => d.properties.name)
       .attr("data-rt", d => d.properties.rt)
+      .attr("data-infected", d=> d.properties.infected)
       .attr("cx", 740)
       .attr("cy", 220)
       .attr("r", 5)
-      .attr("fill", (d) => d.properties.fill)
-      .attr("stroke", "white")
-      .attr("stroke-width", "2")
+      .style("fill", (d) => d.properties.rtfill)
+      .style("stroke", "white")
+      .style("stroke-width", "2")
 
       .on("mousemove", (d) => {
-        tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4) + "</p>")
+        tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4)+ "<br />% infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "%</p>")
           .style("left", (d.x + 18) + "px")
           .style("top", (d.y - 28) + "px")
-          .style("opacity", 0.9)
+          .style("visibility", "visible")
       })
       .on("mouseout", (d) => {
         tooltip
-          .style("opacity", 0)
+        .style("visibility", "hidden")
       })
       .on("click", (d) => {
         setModal(!modal);
         setUSState(d.target.dataset.stateabbr);
       });
+    }
+    
+
+  // Toggles between map displays for either rt or infected percent
+  if (d3.select(".toggle").empty()) {
+    d3.select("#figures")
+    .append("button")
+    .attr("class", "toggle")
+    .text("Toggle")
+  }
+
+  d3.select(".toggle")
+    .on("click", () => {
+      setActiveMap(!activeMap);
+      for (let i = 0; i < usStatesAll.length; i++) {
+        
+        let currentState = usStatesAll[i].properties;
+        let usStateId = "#state" + currentState.abbr;
+        if (!activeMap) {
+          console.log(currentState.abbr, currentState.infectedfill);
+          d3.selectAll(usStateId)
+            .style("fill", currentState.infectedfill);
+        }
+        else {
+          d3.selectAll(usStateId)
+            .style("fill", currentState.rtfill);
+        }
+      }
+    });
+      
+
     }
     createMapWithColors();
   });

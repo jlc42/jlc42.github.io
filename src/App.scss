@@ -91,6 +91,13 @@ $bgcolorEven: #303030;
   text-align: center;
   background-color: $bgcolorOdd;
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#figures .toggle {
+  width: 140px;
 }
 
 #figures h2 {
