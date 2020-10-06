@@ -139,8 +139,20 @@ var tooltip = d3.select("body")
  .attr("class", "tooltip")               
  .style("visibility", "hidden");
 
+// Component that colors the US map based on data provided
 const USAMap = ({ modal, setModal, USState, setUSState }) => {
+  // Legend keys
+  const rtLegend = [">1.10", ">1.02", "between", "<0.98", "<0.95"];
+  const infLegend = [">100%", ">75%", ">50%", ">25%", "<=25%"];
+
+  // React hook that determines which active dataset is showing for the colors on the map
   const [activeMap, setActiveMap] = React.useState(false);
+  // React hook for storing the associated legends with the active dataset
+  const [legend, setLegend] = React.useState(rtLegend);
+  // React hook for legend title
+  const [legendTitle, setLegendTitle] = React.useState("rt");
+  
+
   //Width and height of map
   var width = 960;
   var height = 500;
@@ -188,7 +200,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
   // Get the current colors for each state to use for fill
   // Colors: Red, Orange, Yellow,  Green, Bright-Green
   let statusIndicator = ["#cc0000", "#ffa500", "#cccc00", "#00cc00", "#66ff00"];
-  
+
   // Build the map using d3 and the fill colors from the rt data
   React.useEffect(() => {
     // Boolean that holds current map color that is active
@@ -197,7 +209,38 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .attr("width", width)
       .attr("height", height);
 
-    console.log("try");
+    svg.select(".legendTitle").remove();
+    svg.selectAll(".dots").remove();
+    svg.selectAll('.labels').remove();
+
+    // Build the legend
+    svg.append("text")
+      .text(legendTitle)
+      .attr("class", "legendTitle")
+      .attr("x", width - 80)
+      .attr("y", height - 170)
+      .style("font-weight", "bold")
+
+    svg.selectAll(".dots")
+      .data(legend)
+      .enter()
+      .append("circle")
+      .attr('class', 'dots')
+      .attr("r", 7)
+      .attr("cx", width - 100)
+      .attr("cy", (d,i) => (height - 150) + i*25)
+      .style("fill", (d,i) => statusIndicator[i]);
+
+    svg.selectAll(".labels")
+      .data(legend)
+      .enter()
+      .append("text")
+      .attr('class', 'labels')
+      .attr("x", width - 80)
+      .attr("y", (d,i)=>  (height - 150) + i*25)
+      .text(d => d)
+      .attr("text-anchor", "left")
+      .style("alignment-baseline", "middle");
 
     const createMapWithColors = async () => {
       let usStatesAll = usStates.features;
@@ -264,7 +307,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .data(usStatesAll)
       .enter()
       .append("path")
-      .attr("id", d => "state" + d.properties.abbr)
+      .attr("class", d => "state" + d.properties.abbr)
       .attr("d", path)
       .attr("data-stateabbr", (d) => d.properties.abbr)
       .attr("data-state", (d) => d.properties.name)
@@ -291,12 +334,12 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
 
     
     // Insert DC as a circle
-    if (d3.selectAll("#stateDC").size() === 1) {
+    if (d3.selectAll(".stateDC").size() === 1) {
       svg.selectAll("svg")
       .data([usStatesAll.find(e => e.id === "11")])
       .enter()
       .append("circle")
-      .attr("id", d => "state" + d.properties.abbr)
+      .attr("class", d => "state" + d.properties.abbr)
       .attr("data-stateabbr", (d) => d.properties.abbr)
       .attr("data-state", (d) => d.properties.name)
       .attr("data-rt", d => d.properties.rt)
@@ -325,34 +368,39 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
     }
     
 
-  // Toggles between map displays for either rt or infected percent
-  if (d3.select(".toggle").empty()) {
-    d3.select("#figures")
-    .append("button")
-    .attr("class", "toggle")
-    .text("Toggle")
-  }
+    // Toggles between map displays for either rt or infected percent
+    if (d3.select(".toggle").empty()) {
+      d3.select("#figures")
+      .append("button")
+      .attr("class", "toggle chartButton")
+      .text("Toggle Map Display")
+    }
 
-  d3.select(".toggle")
-    .on("click", () => {
-      setActiveMap(!activeMap);
-      for (let i = 0; i < usStatesAll.length; i++) {
-        
-        let currentState = usStatesAll[i].properties;
-        let usStateId = "#state" + currentState.abbr;
+    d3.select(".toggle")
+      .on("click", () => {
+        setActiveMap(!activeMap);
         if (!activeMap) {
-          console.log(currentState.abbr, currentState.infectedfill);
-          d3.selectAll(usStateId)
-            .style("fill", currentState.infectedfill);
+          setLegendTitle("infected")
+          setLegend(infLegend);
         }
         else {
-          d3.selectAll(usStateId)
-            .style("fill", currentState.rtfill);
+          setLegendTitle("rt")
+          setLegend(rtLegend);
         }
-      }
-    });
-      
-
+        for (let i = 0; i < usStatesAll.length; i++) {
+          let currentState = usStatesAll[i].properties;
+          let usStateId = ".state" + currentState.abbr;
+          if (!activeMap) {
+            d3.selectAll(usStateId)
+              .style("fill", currentState.infectedfill);
+          }
+          else {
+            d3.selectAll(usStateId)
+              .style("fill", currentState.rtfill);
+          }
+        }
+      });
+    
     }
     createMapWithColors();
   });
@@ -451,7 +499,7 @@ const Modal = ({ handleClose, show, location }) => {
           <h1>{currentUSStateName} - {currentCategoryName}</h1>
           {/* Insert buttons that allow you to change the category and view the related category's contents */}
           {categoriesArr.map((item) => {
-            return <button key={item} onClick={(() => setCategory(item))}>{Data.categories[item].name}</button>
+            return <button key={item} class="chartButton" onClick={(() => setCategory(item))}>{Data.categories[item].name}</button>
           })}
         </div>
         <img className="modal-image" src={image} alt={location} />
