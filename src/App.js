@@ -143,14 +143,14 @@ var tooltip = d3.select("body")
 const USAMap = ({ modal, setModal, USState, setUSState }) => {
   // Legend keys
   const rtLegend = [">1.10", ">1.02", "between", "<0.98", "<0.95"];
-  const infLegend = [">100%", ">75%", ">50%", ">25%", "<=25%"];
+  const infLegend = [">1%", ">0.75%", ">0.50%", ">0.25%", "<=0.25%"];
 
   // React hook that determines which active dataset is showing for the colors on the map
   const [activeMap, setActiveMap] = React.useState(false);
   // React hook for storing the associated legends with the active dataset
-  const [legend, setLegend] = React.useState(rtLegend);
+  const [legend, setLegend] = React.useState(infLegend);
   // React hook for legend title
-  const [legendTitle, setLegendTitle] = React.useState("rt");
+  const [legendTitle, setLegendTitle] = React.useState("infected");
   
 
   //Width and height of map
@@ -286,10 +286,10 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
           let currentInfected = infectedData[i][Object.keys(infectedData[i])[0]].Mean;
 
           let infectedColor;
-          if (currentInfected > 1.0) infectedColor = statusIndicator[0];
-          else if (currentInfected > 0.75) infectedColor = statusIndicator[1];
-          else if (currentInfected > 0.50) infectedColor = statusIndicator[2];
-          else if (currentInfected > 0.25) infectedColor = statusIndicator[3];
+          if (currentInfected > .01) infectedColor = statusIndicator[0];
+          else if (currentInfected > .075) infectedColor = statusIndicator[1];
+          else if (currentInfected > .050) infectedColor = statusIndicator[2];
+          else if (currentInfected > .025) infectedColor = statusIndicator[3];
           else infectedColor = statusIndicator[4];
 
           let existingUSStateInJSON = usStatesAll.find(e => e.properties.abbr === currentState);
@@ -315,7 +315,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .attr("data-infected", d=> d.properties.infected)
       .style("stroke", "#fff")
       .style("stroke-width", "1")
-      .style("fill", (d) => d.properties.rtfill)
+      .style("fill", (d) => d.properties.infectedfill)
 
       .on("mousemove", (d) => {
         tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4)+ "<br />% infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "%</p>")
@@ -347,7 +347,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .attr("cx", 740)
       .attr("cy", 220)
       .attr("r", 5)
-      .style("fill", (d) => d.properties.rtfill)
+      .style("fill", (d) => d.properties.infectedfill)
       .style("stroke", "white")
       .style("stroke-width", "2")
 
@@ -379,7 +379,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
     d3.select(".toggle")
       .on("click", () => {
         setActiveMap(!activeMap);
-        if (!activeMap) {
+        if (activeMap) {
           setLegendTitle("infected")
           setLegend(infLegend);
         }
@@ -390,7 +390,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
         for (let i = 0; i < usStatesAll.length; i++) {
           let currentState = usStatesAll[i].properties;
           let usStateId = ".state" + currentState.abbr;
-          if (!activeMap) {
+          if (activeMap) {
             d3.selectAll(usStateId)
               .style("fill", currentState.infectedfill);
           }
