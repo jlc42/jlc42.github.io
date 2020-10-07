@@ -150,7 +150,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
   // React hook for storing the associated legends with the active dataset
   const [legend, setLegend] = React.useState(infLegend);
   // React hook for legend title
-  const [legendTitle, setLegendTitle] = React.useState("infected");
+  const [legendTitle, setLegendTitle] = React.useState("actively infected");
   
 
   //Width and height of map
@@ -217,7 +217,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
     svg.append("text")
       .text(legendTitle)
       .attr("class", "legendTitle")
-      .attr("x", width - 80)
+      .attr("x", width - 130)
       .attr("y", height - 170)
       .style("font-weight", "bold")
 
@@ -285,11 +285,13 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
           
           let currentInfected = infectedData[i][Object.keys(infectedData[i])[0]].Mean;
 
+          console.log(currentState, currentInfected);
+
           let infectedColor;
           if (currentInfected > .01) infectedColor = statusIndicator[0];
-          else if (currentInfected > .075) infectedColor = statusIndicator[1];
-          else if (currentInfected > .050) infectedColor = statusIndicator[2];
-          else if (currentInfected > .025) infectedColor = statusIndicator[3];
+          else if (currentInfected > .0075) infectedColor = statusIndicator[1];
+          else if (currentInfected > .0050) infectedColor = statusIndicator[2];
+          else if (currentInfected > .0025) infectedColor = statusIndicator[3];
           else infectedColor = statusIndicator[4];
 
           let existingUSStateInJSON = usStatesAll.find(e => e.properties.abbr === currentState);
@@ -318,7 +320,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .style("fill", (d) => d.properties.infectedfill)
 
       .on("mousemove", (d) => {
-        tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4)+ "<br />% infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "%</p>")
+        tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4)+ "<br />% actively infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "%</p>")
           .style("left", (d.x + 18) + "px")
           .style("top", (d.y - 28) + "px")
           .style("visibility", "visible")
@@ -352,7 +354,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .style("stroke-width", "2")
 
       .on("mousemove", (d) => {
-        tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4)+ "<br />% infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "%</p>")
+        tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4)+ "<br />% actively infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "%</p>")
           .style("left", (d.x + 18) + "px")
           .style("top", (d.y - 28) + "px")
           .style("visibility", "visible")
@@ -380,7 +382,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .on("click", () => {
         setActiveMap(!activeMap);
         if (activeMap) {
-          setLegendTitle("infected")
+          setLegendTitle("actively infected")
           setLegend(infLegend);
         }
         else {
