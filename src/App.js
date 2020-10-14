@@ -151,21 +151,6 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
   const [legend, setLegend] = React.useState(infLegend);
   // React hook for legend title
   const [legendTitle, setLegendTitle] = React.useState("actively infected");
-  
-
-  //Width and height of map
-  var width = 960;
-  var height = 500;
-
-  // D3 Projection
-  var projection = d3.geoAlbersUsa()
-            .translate([width/2, height/2])    // translate to center of screen
-            .scale([1000]);          // scale things down so see entire US
-          
-  // Define path generator
-  var path = d3.geoPath()               // path generator that will convert GeoJSON to SVG paths
-          .projection(projection);  // tell path generator to use albersUsa projection
-
 
   const svgRef = React.useRef();
   
@@ -200,12 +185,24 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
   // Get the current colors for each state to use for fill
   // Colors: Red, Orange, Yellow,  Green, Bright-Green
   let statusIndicator = ["#cc0000", "#ffa500", "#cccc00", "#00cc00", "#66ff00"];
-
+  
   // Build the map using d3 and the fill colors from the rt data
   React.useEffect(() => {
-    // Boolean that holds current map color that is active
+    //Width and height of map
+    console.log(d3.select("#map").style("width"));
+    var width = parseInt(d3.select("#map").style("width"));
+    var height = width * 0.5;
 
-    const svg = d3.select(svgRef.current)
+    // D3 Projection
+    var projection = d3.geoAlbersUsa()
+              .translate([width/2, height/2])    // translate to center of screen
+              .scale([width]);          // scale things down so see entire US
+            
+    // Define path generator
+    var path = d3.geoPath()               // path generator that will convert GeoJSON to SVG paths
+            .projection(projection);  // tell path generator to use albersUsa projection
+
+    var svg = d3.select(svgRef.current)
       .attr("width", width)
       .attr("height", height);
 
@@ -285,8 +282,6 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
           
           let currentInfected = infectedData[i][Object.keys(infectedData[i])[0]].Mean;
 
-          console.log(currentState, currentInfected);
-
           let infectedColor;
           if (currentInfected > .01) infectedColor = statusIndicator[0];
           else if (currentInfected > .0075) infectedColor = statusIndicator[1];
@@ -320,7 +315,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .style("fill", (d) => d.properties.infectedfill)
 
       .on("mousemove", (d) => {
-        tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4)+ "<br />% actively infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "%</p>")
+        tooltip.html("<p>" + d.target.dataset.state + "<br />% actively infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4) + "%</p>")
           .style("left", (d.x + 18) + "px")
           .style("top", (d.y - 28) + "px")
           .style("visibility", "visible")
@@ -346,15 +341,15 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .attr("data-state", (d) => d.properties.name)
       .attr("data-rt", d => d.properties.rt)
       .attr("data-infected", d=> d.properties.infected)
-      .attr("cx", 740)
-      .attr("cy", 220)
-      .attr("r", 5)
+      .attr("cx", width * 0.76)
+      .attr("cy", height * 0.44)
+      .attr("r", width * 0.005)
       .style("fill", (d) => d.properties.infectedfill)
       .style("stroke", "white")
       .style("stroke-width", "2")
 
       .on("mousemove", (d) => {
-        tooltip.html("<p>" + d.target.dataset.state + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4)+ "<br />% actively infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "%</p>")
+        tooltip.html("<p>" + d.target.dataset.state + "<br />% actively infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4) + "%</p>")
           .style("left", (d.x + 18) + "px")
           .style("top", (d.y - 28) + "px")
           .style("visibility", "visible")
@@ -405,12 +400,29 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
     
     }
     createMapWithColors();
+    const resize = () => {
+      width = parseInt(d3.select("#map").style("width"));
+      // console.log(width);
+      height = width * 0.5;
+
+      projection.translate([width/2, height/2])
+        .scale([width]);
+      
+      d3.select("#mapContainer")
+        .style('width', d3.select("#mapContainer").style("width"))
+      
+      d3.select("#map")
+        .style('width', width + 'px')
+
+    }
+    d3.select(window).on('resize', resize);
   });
+  
 
   return (
-    <>
-      <svg ref={svgRef}></svg>
-    </>
+    <div id="mapContainer">
+      <svg id="map" ref={svgRef}></svg>
+    </div>
   )
 }
 
