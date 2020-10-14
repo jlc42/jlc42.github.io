@@ -107,7 +107,9 @@ $bgcolorEven: #303030;
 }
 
 #mapContainer {
-  width: 90vw;
+  width: 100vw;
+  margin: auto;
+  display: block;
 }
 
 #map {
