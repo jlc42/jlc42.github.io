@@ -343,7 +343,10 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .attr("data-infected", d=> d.properties.infected)
       .attr("cx", width * 0.76)
       .attr("cy", height * 0.44)
-      .attr("r", width * 0.005)
+      .attr("r", () => {
+        if (width * 0.005 > 1) return width * 0.005;
+        else return 1;
+      })
       .style("fill", (d) => d.properties.infectedfill)
       .style("stroke", "white")
       .style("stroke-width", "2")
@@ -402,7 +405,6 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
     createMapWithColors();
     const resize = () => {
       width = parseInt(d3.select("#map").style("width"));
-      // console.log(width);
       height = width * 0.5;
 
       projection.translate([width/2, height/2])
@@ -512,9 +514,11 @@ const Modal = ({ handleClose, show, location }) => {
         <div className="modal-header">  
           <h1>{currentUSStateName} - {currentCategoryName}</h1>
           {/* Insert buttons that allow you to change the category and view the related category's contents */}
-          {categoriesArr.map((item) => {
-            return <button key={item} class="chartButton" onClick={(() => setCategory(item))}>{Data.categories[item].name}</button>
-          })}
+          <div className="modal-buttons">
+            {categoriesArr.map((item) => {
+              return <button key={item} class="chartButton" onClick={(() => setCategory(item))}>{Data.categories[item].name}</button>
+            })}
+          </div>
         </div>
         <img className="modal-image" src={image} alt={location} />
         <div className="modal-content">

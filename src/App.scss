@@ -170,6 +170,10 @@ $bgcolorEven: #303030;
   margin-bottom: 0;
 }
 
+.newsItemContainer img {
+  max-width: 80vw;
+}
+
 #credits {
   margin: auto;
   padding-top: 42px;
@@ -195,7 +199,9 @@ $bgcolorEven: #303030;
   height: 160px;
 }
 
-.creditContainer p, h3, h4 {
+.creditContainer p, 
+.creditContainer h3, 
+.creditContainer h4 {
   text-align: left;
   padding-left: 16px;
 }
@@ -210,6 +216,10 @@ $bgcolorEven: #303030;
   width: 160px;
   object-fit: cover;
   object-position: 50% top;
+}
+
+.creditInfo {
+  vertical-align: top;
 }
 
 .caseImage {
@@ -258,6 +268,9 @@ path:hover, circle:hover {
 
 .modal-header {
   border-bottom: 1px solid rgba(192, 192, 192, 0.6);
+}
+
+.modal-header h1 {
   text-align: center;
 }
 
@@ -272,8 +285,7 @@ path:hover, circle:hover {
   position:fixed;
   background: white;
   color: black;
-  width: 680px;
-  height: auto;
+  width: 85vw;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
@@ -282,6 +294,7 @@ path:hover, circle:hover {
   border-radius: 10px;
   text-align: left;
   vertical-align: top;
+  text-align: center;
   
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -296,12 +309,15 @@ path:hover, circle:hover {
 
 .modal-image {
   margin: auto;
-  width: 100%;
+  width: 70%;
 }
 
 .modal-content {
   margin-left: 20px;
   margin-bottom: 10px;
+  text-align: left;
+  max-height: 30vh;
+  overflow-y: scroll;
 }
 
 .modal-footer {
@@ -334,7 +350,58 @@ path:hover, circle:hover {
 
 /* Modal info end */
 
-@media (max-width: 400px) {  
+@media (max-width: 650px) {  
+  .modal-image {
+    max-height: 30vh;
+    width: auto;
+  }
+
+  .modal-content {
+    max-height: 15vh;
+  }
+
   
+  .modal-buttons {
+    max-height: 10vh;
+    overflow-y: scroll;
+  }
+
+  .modal-main {
+    transform: translate(-50%,-45%);
+  }
+
+  .legendTitle, .dots, .labels {
+    visibility: hidden;
+  }
+
+  #map {
+    width: 100vw;
+  }
+
+  .creditContainer {
+    height: 15vh;
+    width: 90%;
+  }
+
+  .creditInfo {
+    vertical-align: top;
+    height: 15vh;
+    overflow-y: scroll;
+  }
+
+  .creditInfo h3, .creditInfo h4 {
+    margin-top: 0px;
+  }
+
+  .creditContainer .creditImageContainer {
+    height: 15vh;
+    width: 15vh;
+  }
+  
+  .creditContainer img {
+    height: 15vh;
+    width: 15vh;
+  }
+
   
 }
