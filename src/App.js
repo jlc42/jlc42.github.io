@@ -203,8 +203,8 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
             .projection(projection);  // tell path generator to use albersUsa projection
 
     var svg = d3.select(svgRef.current)
-      .attr("width", width)
-      .attr("height", height);
+      .style("width", width + "px")
+      .style("height", height + "px");
 
     svg.select(".legendTitle").remove();
     svg.selectAll(".dots").remove();
@@ -315,7 +315,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .style("fill", (d) => d.properties.infectedfill)
 
       .on("mousemove", (d) => {
-        tooltip.html("<p>" + d.target.dataset.state + "<br />% actively infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4) + "%</p>")
+        tooltip.html("<p>" + d.target.dataset.state + "<br />% actively infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4) + "</p>")
           .style("left", (d.x + 18) + "px")
           .style("top", (d.y - 28) + "px")
           .style("visibility", "visible")
@@ -352,7 +352,7 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       .style("stroke-width", "2")
 
       .on("mousemove", (d) => {
-        tooltip.html("<p>" + d.target.dataset.state + "<br />% actively infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4) + "%</p>")
+        tooltip.html("<p>" + d.target.dataset.state + "<br />% actively infected: " + parseFloat(d.target.dataset.infected).toFixed(2) + "<br />rt: " + parseFloat(d.target.dataset.rt).toFixed(4) + "</p>")
           .style("left", (d.x + 18) + "px")
           .style("top", (d.y - 28) + "px")
           .style("visibility", "visible")
@@ -410,8 +410,8 @@ const USAMap = ({ modal, setModal, USState, setUSState }) => {
       projection.translate([width/2, height/2])
         .scale([width]);
       
-      d3.select("#mapContainer")
-        .style('width', d3.select("#mapContainer").style("width"))
+      // d3.select("#mapContainer")
+      //   .style('width', d3.select("#mapContainer").style("width"))
       
       d3.select("#map")
         .style('width', width + 'px')

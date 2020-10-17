@@ -86,7 +86,7 @@ $bgcolorEven: #303030;
 
 #figures {
   margin: auto;
-  padding-top: 42px;
+  margin-top: 38px;
   height: calc(100vh - 42px);
   text-align: center;
   background-color: $bgcolorOdd;
@@ -107,9 +107,6 @@ $bgcolorEven: #303030;
 }
 
 #mapContainer {
-  width: 100vw;
-  margin: auto;
-  display: block;
 }
 
 #map {
@@ -309,7 +306,7 @@ path:hover, circle:hover {
 
 .modal-image {
   margin: auto;
-  width: 70%;
+  max-width: 70%;
 }
 
 .modal-content {
@@ -373,6 +370,11 @@ path:hover, circle:hover {
   .legendTitle, .dots, .labels {
     visibility: hidden;
   }
+
+  #figures {
+    align-items: left;
+    
+  }  
 
   #map {
     width: 100vw;
